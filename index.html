@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<h2 class="h2">Выбери редкость и получи бустерпак</h2>
+<select class="elements" id="select">
+    <option value="UNCOMMON" selected="selected">UNCOMMON</option>
+    <option value="RARE">RARE</option>
+    <option value="LEGENDARY">LEGENDARY</option>
+</select>
+<input type="number" id="count" class="elements">
+<br>
+<br>
+<button width="100" class="elements" onclick="openUsuallyBusterpack(document.getElementById('select').value)">Открыть
+    обычный бустерпак
+</button>
+<button width="100" class="elements" onclick="openConsistentBusterpack(document.getElementById('select').value)">Открыть
+    consistent пак
+</button>
+<button width="100" class="elements" onclick="openManyConsistentPack(document.getElementById('select').value, +document.getElementById('count').value)">Открыть
+    несколько consistent
+</button>
+<br>
+<br>
+<textarea class="textarea" disabled rows="1" cols="60">ИСТОРИЯ ОТКРЫТИЙ:</textarea>
+<textarea class="textarea" disabled rows="1" cols="60">ИНВЕНТАРЬ:</textarea>
+<textarea class="textarea" disabled id="textarea" rows="37" cols="60"></textarea>
+<textarea class="textarea" disabled id="textarea-eqs" rows="37" cols="60"></textarea>
+</body>
+</html>

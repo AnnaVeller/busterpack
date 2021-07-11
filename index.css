@@ -1,0 +1,27 @@
+body {
+    background: #e3fff8;
+}
+
+.h2 {
+    color: #5705a5;
+}
+
+.elements {
+    text-decoration: none;
+    display: inline-block;
+    color: #5705a5;
+    background-color: #b6f1f1;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.elements:hover {
+    background-position: right center;
+    background-color: #9adbdb;
+}
+
+.textarea {
+    background-color: #f6ffff;
+    color: #5705a5;
+    border-radius: 5px;
+}
