@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="app.js" defer></script>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
@@ -13,17 +13,23 @@
     <option value="RARE">RARE</option>
     <option value="LEGENDARY">LEGENDARY</option>
 </select>
-<input type="number" id="count" class="elements">
+<input type="number" value=1 id="count" class="elements">
 <br>
 <br>
-<button width="100" class="elements" onclick="openUsuallyBusterpack(document.getElementById('select').value)">Открыть
-    обычный бустерпак
+<button id='usually' width="100" class="elements"
+        onclick="openUsuallyBusterpack(document.getElementById('select').value)">
+    Открыть обычный бустерпак
 </button>
-<button width="100" class="elements" onclick="openConsistentBusterpack(document.getElementById('select').value)">Открыть
-    consistent пак
+<button id='consistent' w idth="100" class="elements"
+        onclick="openConsistentBusterpack(document.getElementById('select').value)">
+    Открыть consistent пак
 </button>
-<button width="100" class="elements" onclick="openManyConsistentPack(document.getElementById('select').value, +document.getElementById('count').value)">Открыть
-    несколько consistent
+<button id='fair' width="100" class="elements" onclick="openFairBusterpack(document.getElementById('select').value)">
+    Открыть fair пак
+</button>
+<button id='many-consistent' width="100" class="elements"
+        onclick="openManyConsistentPack(document.getElementById('select').value, +document.getElementById('count').value)">
+    Открыть несколько consistent
 </button>
 <br>
 <br>
