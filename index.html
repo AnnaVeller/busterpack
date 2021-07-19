@@ -16,20 +16,30 @@
 <input type="number" value=1 id="count" class="elements">
 <br>
 <br>
-<button id='usually' width="100" class="elements"
+<button id="usually" width="100" class="elements"
         onclick="openUsuallyBusterpack(document.getElementById('select').value)">
     Открыть обычный бустерпак
 </button>
-<button id='consistent' w idth="100" class="elements"
+<button id="consistent" w idth="100" class="elements"
         onclick="openConsistentBusterpack(document.getElementById('select').value)">
     Открыть consistent пак
 </button>
-<button id='fair' width="100" class="elements" onclick="openFairBusterpack(document.getElementById('select').value)">
+<button id="fair" width="100" class="elements" onclick="openFairBusterpack(document.getElementById('select').value)">
     Открыть fair пак
 </button>
-<button id='many-consistent' width="100" class="elements"
+<br>
+<br>
+<button id="many-usually" width="100" class="elements"
+        onclick="openManyUsuallyPack(document.getElementById('select').value, +document.getElementById('count').value)">
+    Открыть несколько обычных
+</button>
+<button id="many-consistent" width="100" class="elements"
         onclick="openManyConsistentPack(document.getElementById('select').value, +document.getElementById('count').value)">
     Открыть несколько consistent
+</button>
+<button id="many-fair" width="100" class="elements"
+        onclick="openManyFairPack(document.getElementById('select').value, +document.getElementById('count').value)">
+    Открыть несколько fair
 </button>
 <br>
 <br>
